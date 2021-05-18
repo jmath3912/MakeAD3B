@@ -7,8 +7,6 @@ import tkinter.ttk as ttk
 from PIL import ImageTk, Image
 from tkinter.messagebox import showinfo
 from tkinter.filedialog import askopenfilename, asksaveasfilename
-from hdpitkinter import HdpiTk as hdtk
-
 
 global filepath
 filepath = None
