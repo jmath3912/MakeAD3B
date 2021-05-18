@@ -9,9 +9,9 @@ Before you use this program make sure you have the latest version of Python inst
 Once python is installed, download the project files from above onto your Desktop or wherever else you choose to keep the program. Then with the folder open, open the command prompt on the folder and type in the following command:
 
 Windows:
-```pip install -r requirements.txt```
+``pip install -r requirements.txt``
 
 MacOS/Linux:
-```pip3 install -r requirements.txt```
+``pip3 install -r requirements.txt``
 
 Now that Python and all of the dependencies have been installed, we can now run the program. Navigate to the program folder and look for the file named `MakeAD3B.py` and double-click it. If Python is installed correctly, the program should open up and look a bit similar to Notepad on Windows or some other generic text editor.
