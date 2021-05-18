@@ -18,10 +18,10 @@ MacOS/Linux:
 pip3 install -r requirements.txt
 ```
 
-### Running the program
+### **Running the program**
 Now that Python and all of the dependencies have been installed, we can now run the program. Navigate to the program folder and look for the file named `MakeAD3B.py` and double-click it. If Python is installed correctly, the program should open up and look a bit similar to Notepad on Windows or some other generic text editor.
 
-### *How to use the .dsk file*
+### **How to use the .dsk file**
 sample text
 
 ### TO-DO
