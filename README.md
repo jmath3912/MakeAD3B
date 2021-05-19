@@ -21,6 +21,10 @@ pip3 install -r requirements.txt
 ### **Running the program**
 Now that Python and all of the dependencies have been installed, we can now run the program. Navigate to the program folder and look for the file named `MakeAD3B.py` and double-click it. If Python is installed correctly, the program should open up and look a bit similar to Notepad on Windows or some other generic text editor.
 
+When writing your dialogue script, keep in mind that any messages that you wish for Deb to type must be written as normal, but messages that you wish to respond with must be prefixed with a `>` followed by a space. An example is shown below.
+
+
+
 ### **How to use the .dsk file**
 sample text
 

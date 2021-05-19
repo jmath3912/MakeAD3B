@@ -196,7 +196,7 @@ def SyphusMode(e):
     main_color = '#000000'
     secondary_color = '#373737'
     txt_color = '#33ff00'
-
+    
     window.iconbitmap(r'C:\\Users\\jmath\\Desktop\\Coding Shtuff\\Personal Projects\\MakeAD3B\\Logo_Final_Happy_copy.ico')
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
