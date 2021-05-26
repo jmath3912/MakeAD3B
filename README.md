@@ -1,4 +1,4 @@
-![Syntec Logo](/Syntec_Logo.ico)
+![Syntec Logo](/Syntec_BlackTrans_2x_PNG_(1).png)
 
 # MakeAD3B
 MakeAD3B is a text editor program to convert dialogue script into DOS 3.3 disk image containing text file with Applesoft BASIC commands.
