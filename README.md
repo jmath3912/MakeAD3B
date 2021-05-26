@@ -9,12 +9,12 @@ Before you use this program make sure you have the latest version of Python inst
 Once python is installed, download the project files from above onto your Desktop or wherever else you choose to keep the program. Then with the folder open, open the command prompt on the folder and type in the following command:
 
 Windows:
-```ssh
+```
 pip install -r requirements.txt
 ```
 
 MacOS/Linux:
-```ssh
+```
 pip3 install -r requirements.txt
 ```
 
