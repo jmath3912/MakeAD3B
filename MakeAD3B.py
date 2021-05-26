@@ -1,6 +1,6 @@
 import os
 import time
-from atrcopy import *
+import atrcopy
 import tkinter as tk
 from tkinter import font
 import tkinter.ttk as ttk
@@ -95,7 +95,7 @@ def convert2basic():
                         lines[i] = '{} INPUT "";T$\n{} INPUT "";T$\n'.format(n,n+10)
                         n+=10
                     else:
-                        lines[i] = '{} PRINT "{}"\n'.format(n,lines[i][:-1])
+                        lines[i] = '{} PRINT "{}"\n'.format(n,lines[i][:-1].upper())
             with open(convertedfile, 'w') as f1:
                 for line in lines:
                     f1.write(line)
@@ -110,25 +110,18 @@ def convert2basic():
             
             progbar()
 
-            '''
-            NOTE: Un-comment the lines below if you wish to see what the converted txt file looks like in the text editor
-            TODO: Add check-box to toggle the function noted above.
-            '''
-            # with open(convertedfile, 'r') as f2:
-            #     txt_edit.delete(1.0, tk.END)
-            #     text = f2.read()
-            #     txt_edit.insert(tk.END, text)
-            
-            '''
-            NOTE: The lines below delete the converted txt file after the dsk image is made and the txt file is copied to it.
-            TODO: Add slide switch or check box in GUI to toggle between whether the converted txt file will be deleted or not.
-            '''
-            # try:
-            #     os.remove('{}.TXT'.format(cfile))
-            # except OSError:
-            #     return
+            if showconvtxt.get() == True:
+                with open(convertedfile, 'r') as f2:
+                  txt_edit.delete(1.0, tk.END)
+                  text = f2.read()
+                  txt_edit.insert(tk.END, text)
 
-            
+            if delconvfile.get() == True:
+                try:
+                    os.remove('{}.TXT'.format(cfile))
+                except OSError:
+                    return
+
             showinfo('MakeAD3B', 'File successfully converted.')
             window.title(f"MakeAD3B - {convertedfile}")
         except FileNotFoundError:
@@ -197,7 +190,7 @@ def SyphusMode(e):
     secondary_color = '#373737'
     txt_color = '#33ff00'
     
-    window.iconbitmap(r'C:\\Users\\jmath\\Desktop\\Coding Shtuff\\Personal Projects\\MakeAD3B\\Logo_Final_Happy_copy.ico')
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+'/Logo_Final_Happy_copy.ico')
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -214,7 +207,7 @@ def SyntecMode(e):
     secondary_color = 'SystemButtonFace'
     txt_color = '#000000'
 
-    window.iconbitmap(r'C:\\Users\\jmath\\Desktop\\Coding Shtuff\\Personal Projects\\MakeAD3B\\Syntec_logo.ico')
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/Syntec_logo.ico")
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -229,7 +222,7 @@ def SyntecMode(e):
 if __name__ == '__main__':
     # Create window instance
     window = tk.Tk()
-    window.iconbitmap(r'C:\\Users\\jmath\\Desktop\\Coding Shtuff\\Personal Projects\\MakeAD3B\\Syntec_logo.ico')
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/Syntec_logo.ico")
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
     app_width = int(screen_width/2)
@@ -241,6 +234,13 @@ if __name__ == '__main__':
     window.columnconfigure(0, minsize=800,weight=1)
     window.geometry('{}x{}+{}+{}'.format(app_width,app_height,int(x),int(y)))
 
+    # Create Boolean vars for Options menu
+    showconvtxt = tk.BooleanVar()
+    showconvtxt.set(False)
+
+    delconvfile = tk.BooleanVar()
+    delconvfile.set(False)
+    
     # Create a frame
     my_frame = tk.Frame(window)
     my_frame.pack(side=tk.BOTTOM,pady=5,ipadx=app_width)
@@ -294,18 +294,20 @@ if __name__ == '__main__':
     options_menu.add_cascade(label='Themes',menu=theme_menu)
     theme_menu.add_command(label='Syntec Theme (Light Mode)', command=lambda: SyntecMode(False))
     theme_menu.add_command(label='Syphus Theme (Dark Mode)', command=lambda: SyphusMode(False))
-    
+    options_menu.add_checkbutton(label='Show Converted Text', onvalue=1, offvalue=0, variable=showconvtxt)
+    options_menu.add_checkbutton(label='Delete Temporary Converted TXT File', onvalue=1, offvalue=0, variable=delconvfile)
+
     # Add help menu
     help_menu = tk.Menu(mymenu,tearoff=False)
     mymenu.add_cascade(label='Help',menu=help_menu)
     help_menu.add_command(label='About', command=lambda: aboutinfo(False))
     
     # Create convert button
-    fr_buttons = tk.Frame(my_frame, relief=tk.RAISED, padx=5)
+    fr_buttons = tk.Frame(my_frame, padx=5)
+    fr_buttons.pack(side=tk.TOP)
     btn_c2b = tk.Button(fr_buttons, text="Convert", command=convert2basic, bg='#56c1c1',fg='#000000')
     btn_c2b.pack(side=tk.TOP, anchor=tk.N)
-    fr_buttons.pack(side=tk.TOP)
-
+    
     # Edit Bindings
     window.bind('<Control-Key-n>', new_file)
     window.bind('<Control-Key-o>', open_file)
