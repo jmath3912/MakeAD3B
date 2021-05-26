@@ -190,7 +190,7 @@ def SyphusMode(e):
     secondary_color = '#373737'
     txt_color = '#33ff00'
     
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+'/Logo_Final_Happy_copy.ico')
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Logo_Final_Happy_copy.ico")
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -207,7 +207,7 @@ def SyntecMode(e):
     secondary_color = 'SystemButtonFace'
     txt_color = '#000000'
 
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/Syntec_logo.ico")
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico")
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -222,7 +222,7 @@ def SyntecMode(e):
 if __name__ == '__main__':
     # Create window instance
     window = tk.Tk()
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/Syntec_logo.ico")
+    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico")
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
     app_width = int(screen_width/2)
