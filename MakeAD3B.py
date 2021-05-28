@@ -1,10 +1,11 @@
 import os
 import time
 import atrcopy
+import webbrowser
 import tkinter as tk
 from tkinter import font
 import tkinter.ttk as ttk
-from PIL import ImageTk, Image
+# from PIL import ImageTk, Image
 from tkinter.messagebox import showinfo
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 
@@ -82,24 +83,36 @@ def convert2basic():
             defaultextension="txt",
             filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
         )
+        with open(filepath,'r',newline='\r') as f:
+            j = f.read()
+            s = str()
+        if '\n' in j:
+            s = j.replace('\n','\r')
+        with open(filepath,'w',newline='\r') as f:
+            f.write(s)
         try:
-            with open(filepath, "w") as output_file:
+            with open(filepath, "w",newline='\r') as output_file:
                 text = txt_edit.get(1.0, tk.END)
                 output_file.write(text[0:-1])
-            with open(filepath, "r") as f:
+            with open(filepath, "r",newline='\r') as f:
                 lines = f.readlines()
                 n=0
                 for i in range(len(lines)):
                     n+=10
                     if lines[i].startswith('>'):
-                        lines[i] = '{} INPUT "";T$\n{} INPUT "";T$\n'.format(n,n+10)
+                        lines[i] = '{} INPUT "";T$\r{} INPUT "";T$\r'.format(n,n+10)
                         n+=10
                     else:
-                        lines[i] = '{} PRINT "{}"\n'.format(n,lines[i][:-1].upper())
-            with open(convertedfile, 'w') as f1:
-                for line in lines:
-                    f1.write(line)
-            
+                        lines[i] = '{} PRINT "{}"\r'.format(n,lines[i][:-1].upper())
+            with open(convertedfile, 'w',newline='\r') as f1:
+                f1.write(''.join(lines))
+            with open(convertedfile,'r',newline='\r') as f:
+                stuff=f.read()
+            txt = bytes(stuff,'utf-8').hex()
+            newtxt = ''.join([chr(int(''.join(c), 16)+128) for c in zip(txt[0::2],txt[1::2])])
+            with open(convertedfile,'w',encoding='latin-1',newline='\r') as f:
+                f.write(newtxt)
+
             cfile = convertedfile.split('/')[-1][0:-4]
             cfiledir = '\\'.join(convertedfile.split('/')[0:-1])
             
@@ -110,19 +123,12 @@ def convert2basic():
             
             progbar()
 
-            if showconvtxt.get() == True:
-                with open(convertedfile, 'r') as f2:
-                  txt_edit.delete(1.0, tk.END)
-                  text = f2.read()
-                  txt_edit.insert(tk.END, text)
+            try:
+                os.remove('{}.TXT'.format(cfile))
+            except OSError:
+                return
 
-            if delconvfile.get() == True:
-                try:
-                    os.remove('{}.TXT'.format(cfile))
-                except OSError:
-                    return
-
-            showinfo('MakeAD3B', 'File successfully converted.')
+            showinfo('MakeAD3B', f'File successfully converted. Disk image saved to {cfiledir} as {cfile}.')
             window.title(f"MakeAD3B - {convertedfile}")
         except FileNotFoundError:
             return
@@ -184,6 +190,10 @@ def paste_text(e):
 def aboutinfo(e):
     showinfo('MakeAD3B by DJRemedyMusic', 'MakeAD3B is a Python text editor and conversion program (made by DJRemedyMusic) that takes a dialogue script and converts it into a DOS3.3 disk image containing a text file with a series of Applsoft Basic commands which will be used to type your dialogue as if it were Deb herself responding to you.')
 
+# Open help link
+def openlink(e):
+    webbrowser.open('https://github.com/jmath3912/MakeAD3B#makead3b',2,True)
+
 # Project 863 themed themes
 def SyphusMode(e):
     main_color = '#000000'
@@ -233,13 +243,6 @@ if __name__ == '__main__':
     window.rowconfigure(0, minsize=800,weight=1)
     window.columnconfigure(0, minsize=800,weight=1)
     window.geometry('{}x{}+{}+{}'.format(app_width,app_height,int(x),int(y)))
-
-    # Create Boolean vars for Options menu
-    showconvtxt = tk.BooleanVar()
-    showconvtxt.set(False)
-
-    delconvfile = tk.BooleanVar()
-    delconvfile.set(False)
     
     # Create a frame
     my_frame = tk.Frame(window)
@@ -294,14 +297,13 @@ if __name__ == '__main__':
     options_menu.add_cascade(label='Themes',menu=theme_menu)
     theme_menu.add_command(label='Syntec Theme (Light Mode)', command=lambda: SyntecMode(False))
     theme_menu.add_command(label='Syphus Theme (Dark Mode)', command=lambda: SyphusMode(False))
-    options_menu.add_checkbutton(label='Show Converted Text', onvalue=1, offvalue=0, variable=showconvtxt)
-    options_menu.add_checkbutton(label='Delete Temporary Converted TXT File', onvalue=1, offvalue=0, variable=delconvfile)
 
     # Add help menu
     help_menu = tk.Menu(mymenu,tearoff=False)
     mymenu.add_cascade(label='Help',menu=help_menu)
     help_menu.add_command(label='About', command=lambda: aboutinfo(False))
-    
+    help_menu.add_command(label='Documentation', command=lambda: openlink(False))
+
     # Create convert button
     fr_buttons = tk.Frame(my_frame, padx=5)
     fr_buttons.pack(side=tk.TOP)
