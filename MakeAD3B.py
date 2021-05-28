@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import atrcopy
 import webbrowser
@@ -8,6 +9,17 @@ import tkinter.ttk as ttk
 # from PIL import ImageTk, Image
 from tkinter.messagebox import showinfo
 from tkinter.filedialog import askopenfilename, asksaveasfilename
+
+# Resource path formatter
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 global filepath
 filepath = None
@@ -200,7 +212,7 @@ def SyphusMode(e):
     secondary_color = '#373737'
     txt_color = '#33ff00'
     
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Logo_Final_Happy_copy.ico")
+    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Logo_Final_Happy_copy.ico"))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -217,7 +229,7 @@ def SyntecMode(e):
     secondary_color = 'SystemButtonFace'
     txt_color = '#000000'
 
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico")
+    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico"))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -232,7 +244,7 @@ def SyntecMode(e):
 if __name__ == '__main__':
     # Create window instance
     window = tk.Tk()
-    window.iconbitmap(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico")
+    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico"))
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
     app_width = int(screen_width/2)
