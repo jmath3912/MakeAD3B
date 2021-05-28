@@ -1,5 +1,4 @@
-![Syntec Logo](/images/Syntec_White_2x_PNG_(1).png)
-
+![Syntec Logo](images/Syntec_White_2x_PNG_(1).png)
 # MakeAD3B
 
 **TEXT EDITOR // FILE CONVERSION // EASY TO USE**
