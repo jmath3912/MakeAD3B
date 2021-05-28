@@ -52,5 +52,4 @@ sample text
 
 ### TO-DO
 - [ ] Automatically reformat .dsk file so it works as an Applsoft BASIC file immediately
-- [ ] Add checkboxes to toggle deletion of new, converted text file.
 - [x] Add themes under the Options Menu

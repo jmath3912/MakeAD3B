@@ -117,13 +117,10 @@ def convert2basic():
                     else:
                         lines[i] = '{} PRINT "{}"\r'.format(n,lines[i][:-1].upper())
             with open(convertedfile, 'w',newline='\r') as f1:
-                f1.write(''.join(lines))
-            with open(convertedfile,'r',newline='\r') as f:
-                stuff=f.read()
-            txt = bytes(stuff,'utf-8').hex()
-            newtxt = ''.join([chr(int(''.join(c), 16)+128) for c in zip(txt[0::2],txt[1::2])])
-            with open(convertedfile,'w',encoding='latin-1',newline='\r') as f:
-                f.write(newtxt)
+                stuff=''.join(lines)
+                txt = bytes(stuff,'utf-8').hex()
+                newtxt = ''.join([chr(int(''.join(c), 16)+128) for c in zip(txt[0::2],txt[1::2])])
+                f1.write(newtxt)
 
             cfile = convertedfile.split('/')[-1][0:-4]
             cfiledir = '\\'.join(convertedfile.split('/')[0:-1])
