@@ -91,18 +91,18 @@ def convert2basic():
         return
     
     if filepath is not None:
-        convertedfile = asksaveasfilename(
-            defaultextension="txt",
-            filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
-        )
-        with open(filepath,'r',newline='\r') as f:
-            j = f.read()
-            s = str()
-        if '\n' in j:
-            s = j.replace('\n','\r')
-        with open(filepath,'w',newline='\r') as f:
-            f.write(s)
         try:
+            convertedfile = asksaveasfilename(
+                defaultextension="txt",
+                filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
+            )
+            with open(filepath,'r',newline='\r') as f:
+                j = f.read()
+                s = str()
+            if '\n' in j:
+                s = j.replace('\n','\r')
+            with open(filepath,'w',newline='\r') as f:
+                f.write(s)
             with open(filepath, "w",newline='\r') as output_file:
                 text = txt_edit.get(1.0, tk.END)
                 output_file.write(text[0:-1])
@@ -116,7 +116,7 @@ def convert2basic():
                         n+=10
                     else:
                         lines[i] = '{} PRINT "{}"\r'.format(n,lines[i][:-1].upper())
-            with open(convertedfile, 'w',newline='\r') as f1:
+            with open(convertedfile, 'w',newline='\r',encoding='latin-1') as f1:
                 stuff=''.join(lines)
                 txt = bytes(stuff,'utf-8').hex()
                 newtxt = ''.join([chr(int(''.join(c), 16)+128) for c in zip(txt[0::2],txt[1::2])])
@@ -132,13 +132,13 @@ def convert2basic():
             
             progbar()
 
-            try:
-                os.remove('{}.TXT'.format(cfile))
-            except OSError:
-                return
+            # try:
+            #     os.remove('{}.TXT'.format(cfile))
+            # except OSError:
+            #     return
 
-            showinfo('MakeAD3B', f'File successfully converted. Disk image saved to {cfiledir} as {cfile}.')
-            window.title(f"MakeAD3B - {convertedfile}")
+            showinfo('MakeAD3B', f'File successfully converted. Disk image saved to {cfiledir} as {cfile}.dsk')
+            window.title(f"MakeAD3B - {filepath}")
         except FileNotFoundError:
             return
 
