@@ -4,9 +4,9 @@
 **TEXT EDITOR // FILE CONVERSION // EASY TO USE**
 
 ---
-MakeAD3B is a text editor program to convert dialogue script into DOS 3.3 disk image containing text file with Applesoft BASIC commands.
+MakeAD3B is a text editing program to convert dialogue script into a DOS 3.3 disk image, allowing users to essentially make their own D3B.DSK. 
 
-This project is a fan creation for Project 863, an alternate-reality game created byn Matthias and the rest of the team at Spellbound Inc. (formerly known as Hi5 Studios).
+This project is a fan creation for Project 863, an alternate-reality game created byn Matthias (Matthew Fredrick) and the rest of the team at Spellbound Inc. (formerly known as Hi5 Studios).
 
 ### **Prerequisites**
 Before you use this program make sure you have the latest version of Python installed (I am working on setting up application files for the major operating systems, but in the meantime we have the Python file itself). The program will not work unless you have Python installed on your machine. Along with the Python installation, also be sure to install the latest version of pip if it is not automatically installed with Python.
