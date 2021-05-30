@@ -66,7 +66,9 @@ DISK VOLUME 254
  T 040 FILENAME.TXT
 ```
 4. Type in `EXEC` and then the name of TXT file (eg. `EXEC FILENAME.TXT`). If all is working properly, you should see a series of `]` prompts (probably as many `]` prompts as there are lines in your program) scroll up the screen, as shown below:
-```txt
+```basic
+] EXEC FILENAME.TXT
+]
 ]
 ]
 ]
