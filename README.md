@@ -79,5 +79,5 @@ DISK VOLUME 254
 7. All you need to do now is to type `RUN MYPROGRAM.DSK`, where `MYPROGRAM` is replaced the dsk name you used in the `INIT` command (eg. `RUN D3B.DSK`).
 
 ### *TO-DO*
-- [ ] Automatically reformat .dsk file so it works as an Applsoft BASIC file immediately
+- [ ] Add auto-EXEC feature to eliminate need to EXEC and INIT in emulator
 - [x] Add themes under the Options Menu
