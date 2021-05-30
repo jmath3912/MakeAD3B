@@ -132,10 +132,10 @@ def convert2basic():
             
             progbar()
 
-            # try:
-            #     os.remove('{}.TXT'.format(cfile))
-            # except OSError:
-            #     return
+            try:
+                os.remove('{}.TXT'.format(cfile))
+            except OSError:
+                return
 
             showinfo('MakeAD3B', f'File successfully converted. Disk image saved to {cfiledir} as {cfile}.dsk')
             window.title(f"MakeAD3B - {filepath}")
