@@ -1,4 +1,4 @@
-![Syntec Logo](images/Glitch Syntec.gif)
+![Syntec Logo](images/GlitchSyntec.gif)
 # MakeAD3B [Beta]
 
 **TEXT EDITOR // FILE CONVERTER // EASY TO USE**
