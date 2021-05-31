@@ -28,4 +28,4 @@
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).
 
-*.HTML linguist-detectable=false
+*.html linguist-detectable=false
