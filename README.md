@@ -1,7 +1,7 @@
 ![Syntec Logo](images/Syntec_White_2x_PNG_(1).png)
-# MakeAD3B (Beta)
+# MakeAD3B [Beta]
 
-**TEXT EDITOR // FILE CONVERSION // EASY TO USE**
+**TEXT EDITOR // FILE CONVERTER // EASY TO USE**
 
 ---
 MakeAD3B is a text editing program to convert dialogue script into a DOS 3.3 disk image, allowing users to essentially make their own D3B.DSK. 
