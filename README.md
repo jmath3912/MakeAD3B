@@ -85,4 +85,5 @@ DISK VOLUME 254
 - [ ] Add user preferences and allow ability to remember session settings on startup
 - [ ] Add built-in ASCII-cam similar to the one used in Project 863 (just for fun)
 - [ ] Make packaged executable files for each of the major operating systems (Windows, MacOS, Linux, etc.)
+- [ ] Add visuals of some sort or make a tutorial video to show how to use MakeAD3B and the associate dsk
 - [x] Add themes under the Options Menu
