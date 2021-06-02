@@ -82,4 +82,7 @@ DISK VOLUME 254
 
 ### *TO-DO*
 - [ ] Add auto-EXEC feature to eliminate need to EXEC and INIT in emulator
+- [ ] Add user preferences and allow ability to remember session settings on startup
+- [ ] Add built-in ASCII-cam similar to the one used in Project 863 (just for fun)
+- [ ] Make packaged executable files for each of the major operating systems (Windows, MacOS, Linux, etc.)
 - [x] Add themes under the Options Menu
