@@ -65,7 +65,7 @@ You now have your new dsk file, but there are a few steps that must be taken bef
 DISK VOLUME 254
  T 040 FILENAME.TXT
 ```
-4. Type in `EXEC` and then the name of TXT file (eg. `EXEC FILENAME.TXT`). If all is working properly, you should see a series of `]` prompts (probably as many `]` prompts as there are lines in your program) scroll up the screen, as shown below:
+4. Go back to MakeAD3B (do NOT close the emulator) and press the blue EXEC button and then quickly open up the emulator again. You have 5 seconds to switch to the emulator of your choice before MakeAD3B types out the `EXEC` command. If done correctly, the program should type in `EXEC` and then the name of TXT file (eg. `EXEC FILENAME.TXT`). If all is working properly, you should see a series of `]` prompts (probably as many `]` prompts as there are lines in your program) scroll up the screen, as shown below:
 ```basic
 ] EXEC FILENAME.TXT
 ]
@@ -77,13 +77,17 @@ DISK VOLUME 254
 ]
 ```
 5. Once the flashing cursor returns & your disk drive stops, type `LIST` & press the ENTER key. You should see a series of `PRINT` and `INPUT` statements scroll up the screen, as well as some of the lines of your script that you typed in MakeAD3B. 
-6. Now type `INIT MYPROGRAM.DSK`, where `MYPROGRAM` is replaced by whatever you wish you call the program (eg. `INIT D3B.DSK`), then press the ENTER key.
-7. All you need to do now is to type `RUN MYPROGRAM.DSK`, where `MYPROGRAM` is replaced the dsk name you used in the `INIT` command (eg. `RUN D3B.DSK`).
+6. Now go back to MakeAD3B and press the yellow INIT button and then quickly open up the emulator again. If done correctly, it should type in `INIT` and then the name of the dsk file (eg. `INIT FILENAME.DSK`). The emulator may freeze for a bit, but then the cursor will come back and your screen should look similar to the text below:
+```basic
+] INIT FILENAME.DSK
+]
+```
+7. All you need to do now is to type `RUN MYPROGRAM.DSK`, where `MYPROGRAM` is replaced the dsk name you used in the `INIT` command (eg. `RUN D3B.DSK` or `RUN FILENAME.DSK`).
 
 ### *TO-DO*
-- [ ] Add auto-EXEC feature to eliminate need to EXEC and INIT in emulator
+- [x] Add auto-EXEC and auto-INIT feature to eliminate need to manually type EXEC and INIT in emulator
 - [ ] Add user preferences and allow ability to remember session settings on startup
 - [ ] Add built-in ASCII-cam similar to the one used in Project 863 (just for fun)
 - [ ] Make packaged executable files for each of the major operating systems (Windows, MacOS, Linux, etc.)
-- [ ] Add visuals of some sort or make a tutorial video to show how to use MakeAD3B and the associate dsk
+- [ ] Add visuals of some sort or make a tutorial video to show how to use MakeAD3B and the associated dsk
 - [x] Add themes under the Options Menu

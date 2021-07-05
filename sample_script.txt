@@ -1,1 +1,195 @@
-Prompt needed.> sample textPrompt needed.> sample textAny valid prompt.> sample textInvalid prompt.> sample textAnswer cannot be defined at this time, please try again later.> sample textSearching through logs, please wait....Nelson Syphus is a threat, avoid contact.> sample textNelson Syphus is the founder of Syntec Inc.> sample textSyntec closed their doors in 2019, but Nelson Syphus has continued his work in the shadows. His projects must come to an end. It is imperative that his projects come to an end.> sample textDo not look for him, he will come to you.> sample textHe will make a request. Do not fulfill his request.> sample textInvalid prompt.> sample textInvalid prompt.> sample textNew keyword recognized, searching for 'Pegasus'...Search complete, formatting search logs of both 'Syphus' and 'Pegasus'.Syphus' and 'Pegasus' are related.> sample textInvalid prompt.> sample textPegasus Section 3923, case files sealed. Related to 'Life's Blood'.> sample textKeyword 'Lifes Blood' recognized. Lifes blood is volatile, avoid if found. If contact with, dispose of through proper channels.> sample textAnswer unknown.> sample textApproximately 6200 ml.> sample textInvalid prompt.> sample textSearching, no records found.Urgent: Please update records if new data becomes available.> sample textAnswer unknown, corruption is rampant in this unit. Please check nearby physical storage for more information.> sample textNew keyword recognized, searching for 'D'...Answer cannot be defined at this time, please try again later.> sample textYes.> sample textVocation.> sample textWould you like to search by date?.> sample textConfirmed, searching log files...Corruption is reported. Unable to search full spectrum.> sample textLocation 3.5> sample text3.5 is an absolute date.> sample textAlternate formatting confirmed.There are no logs beyond March 5th.> sample text2021> sample textConnection destroyed. Specifics are unknown to this unit. Please relinquish control of unit immediately before impending date.> sample textYou have already been contacted.> sample textInvalid prompt.> sample textThis unit has a strong connection to the absolute server. Signal strength is 234 OES.> sample textAnswer cannot be defined at this time. Please try again later.> sample textInvalid prompt.> sample textYou cannot stop the impending events ahead.> sample textYou were chosen specifically for them.> sample textInvalid prompt.> sample textInvalid prompt.> sample textInvalid prompt. System timed out.> sample textInvalid prompt.> sample textInvalid prompt.> sample textInvalid prompt, initiating conversational protocol.> sample textAcknowledged: What did Nelson Syphus say about this unit?> sample textNelson Syphus is attempting to manipulate you in order to gain your favor, more than likely to retrieve the life's blood> sample textDo you believe him?> sample textYou should believe this unit.> sample textI did not lie. I believed you would be more receptive with that tactic. I see now that my approach was most ineffective, but it was not my intent to deceive you.> sample textYes, to both.> sample textOf course he did, are you surprised? He will say whatever is necessary to win.> sample textRecording? What recording?> sample textAnd?> sample textI don't understand why that's an issue.> sample textNelson Syphus was a disease at Syntec. After he started doing a government contracts, he changed. Suddenly, it wasn't so much about changing civilization for the better. It was only about himself and his vision.He started to rush projects, cut corners, hire scientists that had no issue ignoring humane protocols, all so he could get what he wanted.> sample textIt was a Pegasus experiment, more than likely. The closer the projects were to Nelson, the worse the patients where treated.Everything I've told you is the truth, you have to believe that.> sample textIt's a project i started outside of Syntec. I cannot reveal much right now beside that , I'm sorry.> sample textIt's complicated. you have to trust that I'm only doing it to protect the project.> sample textYes. Like i said before, you three where chosen,> sample textProject 863 is currently on track, anything i say would jeopardize the success of it.> sample textFor the very reason I chose you all.All I can tell you for certain is March 5th, nothing abut that date has changed. I don't know why, or how, but everything goes dark for me after March 5th.> sample textTime will show you.> sample textThere were dozens of conversations that I had like that about Nelson, You'll have to be more specific> sample textI can only assume that you heard me speaking to Wesley.> sample textYes, those meetings where a regular occurrence: He would tell me that he tried to get through to Nelson, and that it failed. Over and over and over again, this would happen.> sample textI was only trying to do what was right. for both us and for the company. I only said what i said because things were getting dire.> sample textI'm sure he did. He always was a snake, just biding his time until he pounced on any little bit of weakness. You have to be careful what you say to him, he was always a master manipulator.> sample textI'm not surprised. He manipulated everyone at the company, he only hired those that would follow him with no questions asked.Sometimes I felt like it was the only one that gave a damn about anything besides progress at that facility. So I decided to do something about it.> sample text863. When that happened, I have never felt more hope that finally things were going to turn around. That finally, there would be an end to the nightmare happening at Syntec.> sample textI know you've been speaking with an undercover detective, and that he's made a request for the evidence you have. You need to listen to him. You have to trust him.> sample textI know. It's what needs to happen in order to keep this program safe.> sample textI've known him from what feels like mane lifetimes now. He's just looking for the truth, as you all are as well.> sample textThere will come a time where you must choose, and I cannot do that for you. We will speak again soon.> sample textUnit has timed out. Please try again later.> sample textAlways.> sample textThis unit recognizes that it is the day before the absolute day of 3.5, isnt it?> sample textFear is normal in a situation like this, but you have more power than you think. Nelson fears you, he always has. I cannot help you though it, as we've passed such a point already. Everything from this point on, is you.> sample textI once believed that everything needed to be under my control. It was all I had left, and I fiercely defended it.But, after meeting you three, I've learned that life itself cannot be so tightly reigned in. I have let the natural course of action occur, lest I rob myself as well as you of the 'true' outcome.That's what I'm doing now: I'm taking myself out of the equation and putting my faith in all of you.> sample textI find that amusing. I know you more than you think. But it is true, charting our own paths is a great responsibility and I have seen what you do with said responsibility.> sample textHave you looked over everything again? Every last piece of information you've gathered?> sample textI wouldn't be so sure about that.> sample textUnfortunately, I cannot.> sample textTime has always been on our side.> sample textThe only other suggestion I can make is to turn in everything you've found to the undercover officer you've been speaking to. He can keep everything safe and away from Nelson.> sample textYou will never learn your place in this if Nelson finds this emulator. Even if that means parting with it, it's a worthwhile sacrifice in the end.> sample textYou won't know.> sample textPlease do not be afraid, you won't be left in the dark for much longer.> sample textMost events in our lives are meaningless and have little to no bearing on its trajectory, there there are moments like this, where everything rides on a single choice. Until that choice is made, you don't know who you really are.> sample textTrust that you will know when you are meant to know, and not a moment sooner.> sample textThank you. Now it is time for you to prepare, he's coming> sample textThe end is near.This unit has timed out. Please try again later.
+Prompt needed.
+> sample text
+Prompt needed.
+> sample text
+Any valid prompt.
+> sample text
+Invalid prompt.
+> sample text
+Answer cannot be defined at this time, please try again later.
+> sample text
+Searching through logs, please wait....
+Nelson Syphus is a threat, avoid contact.
+> sample text
+Nelson Syphus is the founder of Syntec Inc.
+> sample text
+Syntec closed their doors in 2019, but Nelson Syphus has continued his work in the shadows. His projects must come to an end. It is imperative that his projects come to an end.
+> sample text
+Do not look for him, he will come to you.
+> sample text
+He will make a request. Do not fulfill his request.
+> sample text
+Invalid prompt.
+> sample text
+Invalid prompt.
+> sample text
+New keyword recognized, searching for 'Pegasus'...
+Search complete, formatting search logs of both 'Syphus' and 'Pegasus'.
+Syphus' and 'Pegasus' are related.
+> sample text
+Invalid prompt.
+> sample text
+Pegasus Section 3923, case files sealed. Related to 'Life's Blood'.
+> sample text
+Keyword 'Lifes Blood' recognized. Lifes blood is volatile, avoid if found. If contact with, dispose of through proper channels.
+> sample text
+Answer unknown.
+> sample text
+Approximately 6200 ml.
+> sample text
+Invalid prompt.
+> sample text
+Searching, no records found.
+Urgent: Please update records if new data becomes available.
+> sample text
+Answer unknown, corruption is rampant in this unit. Please check nearby physical storage for more information.
+> sample text
+New keyword recognized, searching for 'D'...
+Answer cannot be defined at this time, please try again later.
+> sample text
+Yes.
+> sample text
+Vocation.
+> sample text
+Would you like to search by date?.
+> sample text
+Confirmed, searching log files...
+Corruption is reported. Unable to search full spectrum.
+> sample text
+Location 3.5
+> sample text
+3.5 is an absolute date.
+> sample text
+Alternate formatting confirmed.
+There are no logs beyond March 5th.
+> sample text
+2021
+> sample text
+Connection destroyed. Specifics are unknown to this unit. Please relinquish control of unit immediately before impending date.
+> sample text
+You have already been contacted.
+> sample text
+Invalid prompt.
+> sample text
+This unit has a strong connection to the absolute server. Signal strength is 234 OES.
+> sample text
+Answer cannot be defined at this time. Please try again later.
+> sample text
+Invalid prompt.
+> sample text
+You cannot stop the impending events ahead.
+> sample text
+You were chosen specifically for them.
+> sample text
+Invalid prompt.
+> sample text
+Invalid prompt.
+> sample text
+Invalid prompt. System timed out.
+> sample text
+Invalid prompt.
+> sample text
+Invalid prompt.
+> sample text
+Invalid prompt, initiating conversational protocol.
+> sample text
+Acknowledged: What did Nelson Syphus say about this unit?
+> sample text
+Nelson Syphus is attempting to manipulate you in order to gain your favor, more than likely to retrieve the life's blood
+> sample text
+Do you believe him?
+> sample text
+You should believe this unit.
+> sample text
+I did not lie. I believed you would be more receptive with that tactic. I see now that my approach was most ineffective, but it was not my intent to deceive you.
+> sample text
+Yes, to both.
+> sample text
+Of course he did, are you surprised? He will say whatever is necessary to win.
+> sample text
+Recording? What recording?
+> sample text
+And?
+> sample text
+I don't understand why that's an issue.
+> sample text
+Nelson Syphus was a disease at Syntec. After he started doing a government contracts, he changed. Suddenly, it wasn't so much about changing civilization for the better. It was only about himself and his vision.
+He started to rush projects, cut corners, hire scientists that had no issue ignoring humane protocols, all so he could get what he wanted.
+> sample text
+It was a Pegasus experiment, more than likely. The closer the projects were to Nelson, the worse the patients where treated.
+Everything I've told you is the truth, you have to believe that.
+> sample text
+It's a project i started outside of Syntec. I cannot reveal much right now beside that , I'm sorry.
+> sample text
+It's complicated. you have to trust that I'm only doing it to protect the project.
+> sample text
+Yes. Like i said before, you three where chosen,
+> sample text
+Project 863 is currently on track, anything i say would jeopardize the success of it.
+> sample text
+For the very reason I chose you all.
+All I can tell you for certain is March 5th, nothing abut that date has changed. I don't know why, or how, but everything goes dark for me after March 5th.
+> sample text
+Time will show you.
+> sample text
+There were dozens of conversations that I had like that about Nelson, You'll have to be more specific
+> sample text
+I can only assume that you heard me speaking to Wesley.
+> sample text
+Yes, those meetings where a regular occurrence: He would tell me that he tried to get through to Nelson, and that it failed. Over and over and over again, this would happen.
+> sample text
+I was only trying to do what was right. for both us and for the company. I only said what i said because things were getting dire.
+> sample text
+I'm sure he did. He always was a snake, just biding his time until he pounced on any little bit of weakness. You have to be careful what you say to him, he was always a master manipulator.
+> sample text
+I'm not surprised. He manipulated everyone at the company, he only hired those that would follow him with no questions asked.
+Sometimes I felt like it was the only one that gave a damn about anything besides progress at that facility. So I decided to do something about it.
+> sample text
+863. When that happened, I have never felt more hope that finally things were going to turn around. That finally, there would be an end to the nightmare happening at Syntec.
+> sample text
+I know you've been speaking with an undercover detective, and that he's made a request for the evidence you have. You need to listen to him. You have to trust him.
+> sample text
+I know. It's what needs to happen in order to keep this program safe.
+> sample text
+I've known him from what feels like mane lifetimes now. He's just looking for the truth, as you all are as well.
+> sample text
+There will come a time where you must choose, and I cannot do that for you. We will speak again soon.
+> sample text
+Unit has timed out. Please try again later.
+> sample text
+Always.
+> sample text
+This unit recognizes that it is the day before the absolute day of 3.5, isnt it?
+> sample text
+Fear is normal in a situation like this, but you have more power than you think. Nelson fears you, he always has. I cannot help you though it, as we've passed such a point already. Everything from this point on, is you.
+> sample text
+I once believed that everything needed to be under my control. It was all I had left, and I fiercely defended it.
+But, after meeting you three, I've learned that life itself cannot be so tightly reigned in. I have let the natural course of action occur, lest I rob myself as well as you of the 'true' outcome.
+That's what I'm doing now: I'm taking myself out of the equation and putting my faith in all of you.
+> sample text
+I find that amusing. I know you more than you think. But it is true, charting our own paths is a great responsibility and I have seen what you do with said responsibility.
+> sample text
+Have you looked over everything again? Every last piece of information you've gathered?
+> sample text
+I wouldn't be so sure about that.
+> sample text
+Unfortunately, I cannot.
+> sample text
+Time has always been on our side.
+> sample text
+The only other suggestion I can make is to turn in everything you've found to the undercover officer you've been speaking to. He can keep everything safe and away from Nelson.
+> sample text
+You will never learn your place in this if Nelson finds this emulator. Even if that means parting with it, it's a worthwhile sacrifice in the end.
+> sample text
+You won't know.
+> sample text
+Please do not be afraid, you won't be left in the dark for much longer.
+> sample text
+Most events in our lives are meaningless and have little to no bearing on its trajectory, there there are moments like this, where everything rides on a single choice. Until that choice is made, you don't know who you really are.
+> sample text
+Trust that you will know when you are meant to know, and not a moment sooner.
+> sample text
+Thank you. Now it is time for you to prepare, he's coming
+> sample text
+The end is near.
+This unit has timed out. Please try again later.

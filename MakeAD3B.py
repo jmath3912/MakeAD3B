@@ -4,6 +4,7 @@ import time
 import atrcopy
 import webbrowser
 import tkinter as tk
+import keyboard as kbd
 from tkinter import font
 import tkinter.ttk as ttk
 # from PIL import ImageTk, Image
@@ -29,6 +30,9 @@ selected = False
 
 global convertedfile
 convertedfile = None
+
+global cfile
+cfile = None
 
 # New file
 def new_file():
@@ -87,6 +91,8 @@ def convert2basic():
     """Save the current file as an dsk image containing a text file."""
     global filepath
     global convertedfile
+    global cfile
+
     if filepath is None:
         return
     
@@ -99,13 +105,17 @@ def convert2basic():
             with open(filepath,'r',newline='\r') as f:
                 j = f.read()
                 s = str()
+
             if '\n' in j:
                 s = j.replace('\n','\r')
+
             with open(filepath,'w',newline='\r') as f:
                 f.write(s)
+                
             with open(filepath, "w",newline='\r') as output_file:
                 text = txt_edit.get(1.0, tk.END)
                 output_file.write(text[0:-1])
+                
             with open(filepath, "r",newline='\r') as f:
                 lines = f.readlines()
                 n=0
@@ -141,6 +151,24 @@ def convert2basic():
             window.title(f"MakeAD3B - {filepath}")
         except FileNotFoundError:
             return
+
+# Automatically type the appropriate exec command
+def autoexec():
+    global cfile
+    time.sleep(5)
+    try:
+        kbd.write(f'EXEC {cfile}.TXT\n',delay=0.1)
+    except:
+        pass
+
+# Automatically type the appropriate init command
+def autoinit():
+    global cfile
+    time.sleep(5)
+    try:
+        kbd.write(f'INIT {cfile}.DSK\n',delay=0.1)
+    except:
+        pass
 
 # Dummy progress bar
 def progbar():
@@ -216,6 +244,8 @@ def SyphusMode(e):
     txt_edit.config(bg=main_color,fg=txt_color,insertbackground=txt_color)
     fr_buttons.config(bg=secondary_color)
     btn_c2b.config(bg=txt_color,fg=main_color)
+    btn_exec.config(bg=txt_color,fg=main_color)
+    btn_init.config(bg=txt_color,fg=main_color)
     file_menu.config(bg=main_color,fg=txt_color)
     edit_menu.config(bg=main_color,fg=txt_color)
     help_menu.config(bg=main_color,fg=txt_color)
@@ -232,7 +262,9 @@ def SyntecMode(e):
     status_bar.config(bg=secondary_color,fg=txt_color)
     txt_edit.config(bg='#ffffff',fg=txt_color,insertbackground=txt_color)
     fr_buttons.config(bg=secondary_color)
-    btn_c2b.config(bg='#56c1c1',fg=txt_color)
+    btn_c2b.config(bg='#f45137',fg=txt_color)
+    btn_exec.config(bg='#56c1c1',fg=txt_color)
+    btn_init.config(bg='#f9bd46',fg=txt_color)
     file_menu.config(bg=main_color,fg=txt_color)
     edit_menu.config(bg=main_color,fg=txt_color)
     help_menu.config(bg=main_color,fg=txt_color)
@@ -316,9 +348,13 @@ if __name__ == '__main__':
     # Create convert button
     fr_buttons = tk.Frame(my_frame, padx=5)
     fr_buttons.pack(side=tk.TOP)
-    btn_c2b = tk.Button(fr_buttons, text="Convert", command=convert2basic, bg='#56c1c1',fg='#000000')
-    btn_c2b.pack(side=tk.TOP, anchor=tk.N)
-    
+    btn_c2b = tk.Button(fr_buttons, text="CONVERT", command=convert2basic, height=1, width=9, bg='#f45137',fg='#000000')
+    btn_c2b.pack(side=tk.LEFT, anchor=tk.N,padx=5)
+    btn_exec = tk.Button(fr_buttons, text="EXEC", command=autoexec, height=1, width=9, bg='#56c1c1',fg='#000000')
+    btn_exec.pack(side=tk.LEFT, anchor=tk.N,padx=5)
+    btn_init = tk.Button(fr_buttons, text="INIT", command=autoinit, height=1, width=9, bg='#f9bd46',fg='#000000')
+    btn_init.pack(side=tk.LEFT, anchor=tk.N,padx=5)
+
     # Edit Bindings
     window.bind('<Control-Key-n>', new_file)
     window.bind('<Control-Key-o>', open_file)
