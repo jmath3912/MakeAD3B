@@ -5,7 +5,7 @@ import atrcopy
 import webbrowser
 import tkinter as tk
 import keyboard as kbd
-from tkinter import font
+from tkinter import PhotoImage, font
 import tkinter.ttk as ttk
 # from PIL import ImageTk, Image
 from tkinter.messagebox import showinfo
@@ -24,6 +24,12 @@ def resource_path(relative_path):
 
 global filepath
 filepath = None
+
+global SyntecLogo
+SyntecLogo = "/images/Syntec_Logo.png"
+
+global SyphusLogo
+SyphusLogo = "/images/Syntec_Logo.png"
 
 global selected
 selected = False
@@ -143,7 +149,7 @@ def convert2basic():
             progbar()
 
             try:
-                os.remove('{}.TXT'.format(cfile))
+                os.remove('{}.txt'.format(cfile))
             except OSError:
                 return
 
@@ -237,7 +243,7 @@ def SyphusMode(e):
     secondary_color = '#373737'
     txt_color = '#33ff00'
     
-    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Logo_Final_Happy_copy.ico"))
+    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyphusLogo))))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -252,11 +258,11 @@ def SyphusMode(e):
     theme_menu.config(bg=main_color,fg=txt_color)
 
 def SyntecMode(e):
-    main_color = 'SystemButtonFace'
-    secondary_color = 'SystemButtonFace'
+    main_color = '#C0C0C0'
+    secondary_color = '#C0C0C0'
     txt_color = '#000000'
 
-    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico"))
+    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo))))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -273,7 +279,8 @@ def SyntecMode(e):
 if __name__ == '__main__':
     # Create window instance
     window = tk.Tk()
-    window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+"/images/Syntec_logo.ico"))
+    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo))))
+    window.config(bg="#C0C0C0")
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
     app_width = int(screen_width/2)
