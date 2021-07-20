@@ -26,10 +26,10 @@ global filepath
 filepath = None
 
 global SyntecLogo
-SyntecLogo = "/images/Syntec_Logo.png"
+SyntecLogo = "/images/Syntec_Logo.ico"
 
 global SyphusLogo
-SyphusLogo = "/images/Syntec_Logo.png"
+SyphusLogo = "/images/Logo_Final_Happy_copy.ico"
 
 global selected
 selected = False
@@ -243,7 +243,10 @@ def SyphusMode(e):
     secondary_color = '#373737'
     txt_color = '#33ff00'
     
-    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyphusLogo))))
+    if os.name == 'posix':
+        pass
+    else:
+        window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyphusLogo)))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -262,7 +265,10 @@ def SyntecMode(e):
     secondary_color = '#C0C0C0'
     txt_color = '#000000'
 
-    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo))))
+    if os.name == 'posix':
+        pass
+    else:
+        window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo)))
     window.config(bg=secondary_color)
     my_frame.config(bg=secondary_color)
     status_bar.config(bg=secondary_color,fg=txt_color)
@@ -279,7 +285,10 @@ def SyntecMode(e):
 if __name__ == '__main__':
     # Create window instance
     window = tk.Tk()
-    window.iconphoto(True, PhotoImage(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo))))
+    if os.name == 'posix':
+        pass
+    else:
+        window.iconbitmap(resource_path(os.path.dirname(os.path.abspath(__file__))+(SyntecLogo)))
     window.config(bg="#C0C0C0")
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
