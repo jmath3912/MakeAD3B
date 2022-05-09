@@ -41,7 +41,7 @@ global cfile
 cfile = None
 
 # New file
-def new_file():
+def new_file(e):
     global filepath
     txt_edit.delete('1.0', 'end')
     filepath = None
