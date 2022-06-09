@@ -1,5 +1,3 @@
 numpy
 atrcopy
-keyboard
-webbrowser
 pyinstaller
